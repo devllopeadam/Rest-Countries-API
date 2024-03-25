@@ -8,7 +8,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="[https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-SySqXmn49](https://www.frontendmentor.io/solutions/-rest-countries-api-G_U1_n64Bo)">
+    <a href="https://www.frontendmentor.io/solutions/-rest-countries-api-G_U1_n64Bo">
       Solution
     </a>
    <span> | </span>
@@ -48,7 +48,7 @@ I do not have access to the Figma sketch so the design is not pixel-perfect.
 - Flex
 - Rest Countries API
 - react JS
-- vite
+- vite0
 - Framer Motion
 - react router dom
 - sass
