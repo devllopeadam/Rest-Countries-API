@@ -1,0 +1,43 @@
+.header {
+  padding: 13px 0;
+  height: 82px;
+  background-color: var(--header-input);
+  box-shadow: var(--shadow);
+  display: flex;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  a {
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--title);
+    font-size: 24px;
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  .theme {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    p {
+      color: var(--title);
+    }
+
+    .icon {
+      height: 16px;
+      svg {
+        fill: var(--title);
+      }
+    }
+  }
+}

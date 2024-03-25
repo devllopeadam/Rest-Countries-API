@@ -1,0 +1,121 @@
+.filter-section {
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 786px) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  }
+
+  .search-country {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--text-color);
+    border-radius: var(--border-r);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-weight: 700;
+
+    @media (max-width: 586px) {
+      width: 100%;
+    }
+
+    input {
+      padding: 20px 40px 20px 80px;
+      width: 100%;
+      background-color: var(--header-input);
+      font-size: 15px;
+      color: var(--title);
+      font-weight: 300;
+    }
+
+    svg {
+      position: absolute;
+      fill: var(--text-color);
+    }
+    svg:first-of-type {
+      left: 27px;
+      font-size: 23px;
+    }
+    svg:last-of-type {
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .search-region {
+    width: 190px;
+    position: relative;
+
+    .text {
+      padding: 20px 15px;
+      background-color: var(--header-input);
+      border-radius: var(--border-r);
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      p {
+        color: var(--title);
+        font-size: 15px;
+      }
+
+      svg {
+        font-size: 22px;
+        fill: var(--title);
+        transition: 0.2s ease transform;
+        &.rotate {
+          transform: rotate(271deg);
+        }
+      }
+    }
+    ul {
+      padding: 10px 15px;
+      background-color: var(--header-input);
+      border-radius: var(--border-r);
+      box-shadow: var(--shadow);
+      margin-top: 10px;
+      display: none;
+      position: relative;
+      z-index: 100;
+
+      li {
+        color: var(--title);
+        font-size: 15px;
+        font-weight: 300;
+        cursor: pointer;
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
+        }
+      }
+      &.active {
+        display: block;
+        animation: showIt 0.2s ease;
+        opacity: 1;
+        transform: scale(1);
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes showIt {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

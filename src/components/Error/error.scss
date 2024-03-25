@@ -1,0 +1,16 @@
+.error {
+  color: var(--title);
+  text-align: center;
+  padding-top: 50px;
+
+  h1 {
+    margin-bottom: 40px !important;
+  }
+
+  a {
+    padding: 20px 50px;
+    background-color: var(--header-input);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+}

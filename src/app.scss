@@ -1,0 +1,80 @@
+:root {
+  --header-input: #ffffff;
+  --body: #fafafa;
+  --title: #111517;
+  --text-color: #a0a1a2;
+  --border-r: 10px;
+  --shadow: 0 0 3px 3px rgb(0 0 0/3%);
+
+  --shadow-country: 0 0 100px -64px #6e6e6e;
+}
+
+[data-theme="dark"] {
+  --title: #ffffff;
+  --body: #202c37;
+  --text-color: #a0a1a2;
+  --header-input: #2b3945;
+  --border-r: 10px;
+  --shadow: 0 0 3px 3px rgb(0 0 0/3%);
+  --shadow-country: 0 0 100px -64px #fff;
+}
+
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: var(--body);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--header-input);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--body);
+  border-radius: 5px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input,
+input::placeholder {
+  font-family: inherit;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin-inline: auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}

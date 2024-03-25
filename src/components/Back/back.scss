@@ -1,0 +1,44 @@
+.back {
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-start;
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+    padding: 15px 15px;
+    width: 145px;
+    background-color: var(--header-input);
+    border-radius: var(--border-r);
+    box-shadow: var(--shadow);
+
+    p {
+      color: var(--title);
+    }
+    svg {
+      fill: var(--title);
+      font-size: 22px;
+    }
+
+    &:hover {
+      svg {
+        animation: leftRight 0.4s ease;
+      }
+    }
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
