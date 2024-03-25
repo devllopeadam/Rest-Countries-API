@@ -8,7 +8,7 @@
       Live
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-SySqXmn49">
+    <a href="[https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-SySqXmn49](https://www.frontendmentor.io/solutions/-rest-countries-api-G_U1_n64Bo)">
       Solution
     </a>
    <span> | </span>
