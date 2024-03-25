@@ -46,8 +46,12 @@ I do not have access to the Figma sketch so the design is not pixel-perfect.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flex
-- Desktop-first workflow
 - Rest Countries API
+- react JS
+- vite
+- Framer Motion
+- react router dom
+- sass
 
 ## What I learned
 
